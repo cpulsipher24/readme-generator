@@ -21,8 +21,24 @@ function writeToFile(fileName, data) {
     );
   }
   
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// Function to initialize app
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+      // Use the answers to dynamically generate the content of the README
+      const readmeContent = `
+  # ${answers.title}
+  
+  ## Description
+  ${answers.description}
+  
+  // Add more sections based on user input
+  
+  `;
+  
+      // Call the writeToFile function to create the README file
+      writeToFile('README.md', readmeContent);
+    });
+  }
+  
+  // Function call to initialize app
+  init();
