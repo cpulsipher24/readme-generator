@@ -1,10 +1,10 @@
 
-# sdfsrgerh
+# readme generator
     
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
     
 ## Description
-fj
+This app generates readme files
     
 ## Table of Contents
 - [Installation](#installation)
@@ -15,16 +15,16 @@ fj
 - [Questions](#questions)
     
 ## Installation
-fhfgfbs
+clone repository
     
 ## Usage
-f
+To generate readme files.
     
 ## Contributing
-sfgdfg
+Clone repository and add code. 
     
 ## Tests
-dfhdfhd
+node index.js
     
 ## Questions
-For questions or concerns, please contact me through my [GitHub profile](https://github.com/sdfgsfs) or via email at sfgdsg.
+For questions or concerns, please contact me through my [GitHub profile](https://github.com/cpulsipher24) or via email at collintpulsipher@gmail.com.
