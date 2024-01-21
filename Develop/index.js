@@ -65,38 +65,38 @@ function init() {
     const licenseBadge = `![License](https://img.shields.io/badge/License-${encodeURIComponent(answers.license)}-blue.svg)`;
 
     const readmeContent = `
-    # ${answers.title}
+# ${answers.title}
     
-    ${licenseBadge}
+${licenseBadge}
     
-    ## Description
-    ${answers.description}
+## Description
+${answers.description}
     
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
     
-    ## Installation
-    ${answers.installation}
+## Installation
+${answers.installation}
     
-    ## Usage
-    ${answers.usage}
+## Usage
+${answers.usage}
     
-    ## Contributing
-    ${answers.contributing}
+## Contributing
+${answers.contributing}
     
-    ## Tests
-    ${answers.tests}
+## Tests
+${answers.tests}
     
-    ## Questions
-    For questions or concerns, please contact me through my [GitHub profile](https://github.com/${answers.github}) or via email at ${answers.email}.
-    `;
+## Questions
+For questions or concerns, please contact me through my [GitHub profile](https://github.com/${answers.github}) or via email at ${answers.email}.
+`;
     
-
+    
     // Call the writeToFile function to create the README file
     writeToFile('README.md', readmeContent);
   });
