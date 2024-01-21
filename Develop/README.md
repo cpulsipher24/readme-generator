@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
     
 ## Description
-This app generates readme files. 
+This app generates readme files.
     
 ## Table of Contents
 - [Installation](#installation)
@@ -18,13 +18,13 @@ This app generates readme files.
 clone repository
     
 ## Usage
-Use it to generate readme files
+Use it to generate readme files. 
     
 ## Contributing
-Clonse repository and add code. 
+Clone repository and add code. 
     
 ## Tests
-Use command node index.js
+command: node index.js
     
 ## Questions
-For questions or concerns, please contact me through my [GitHub profile](https://github.com/cpu;sipher24) or via email at collintpulsipher@gmail.com.
+For questions or concerns, please contact me through my [GitHub profile](https://github.com/cpulsipher24) or via email at collintpulsipher@gmail.com.
