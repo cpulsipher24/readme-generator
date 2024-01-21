@@ -65,28 +65,37 @@ function init() {
     const licenseBadge = `![License](https://img.shields.io/badge/License-${encodeURIComponent(answers.license)}-blue.svg)`;
 
     const readmeContent = `
-# ${answers.title}
-
-${licenseBadge}
-
-## Description
-${answers.description}
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-// ... rest of the README content
-
-## License
-This project is licensed under the ${answers.license} license.
-
-// ... rest of the README content
-`;
+    # ${answers.title}
+    
+    ${licenseBadge}
+    
+    ## Description
+    ${answers.description}
+    
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+    
+    ## Installation
+    ${answers.installation}
+    
+    ## Usage
+    ${answers.usage}
+    
+    ## Contributing
+    ${answers.contributing}
+    
+    ## Tests
+    ${answers.tests}
+    
+    ## Questions
+    For questions or concerns, please contact me through my [GitHub profile](https://github.com/${answers.github}) or via email at ${answers.email}.
+    `;
+    
 
     // Call the writeToFile function to create the README file
     writeToFile('README.md', readmeContent);
