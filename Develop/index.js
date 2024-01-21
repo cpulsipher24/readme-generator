@@ -62,8 +62,12 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((answers) => {
     // Generate content for the README based on user input
+    const licenseBadge = `![License](https://img.shields.io/badge/License-${encodeURIComponent(answers.license)}-blue.svg)`;
+
     const readmeContent = `
 # ${answers.title}
+
+${licenseBadge}
 
 ## Description
 ${answers.description}
@@ -76,23 +80,12 @@ ${answers.description}
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installation
-${answers.installation}
-
-## Usage
-${answers.usage}
+// ... rest of the README content
 
 ## License
 This project is licensed under the ${answers.license} license.
 
-## Contributing
-${answers.contributing}
-
-## Tests
-${answers.tests}
-
-## Questions
-For questions or concerns, please contact me through my [GitHub profile](https://github.com/${answers.github}) or via email at ${answers.email}.
+// ... rest of the README content
 `;
 
     // Call the writeToFile function to create the README file
